@@ -1,6 +1,13 @@
 package com.consulo.flight.dataobjects.login;
 
-public class LoginDataObject {
+import java.io.Serializable;
+
+public class LoginDataObject implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8119571420157757227L;
 	
 	private String username;
 	private String password;
