@@ -40,7 +40,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model, HttpServletRequest req) {
 		
 		//logger.info("String value {}.", env.getProperty("controller.url.loginvalidate"));
@@ -52,6 +52,12 @@ public class HomeController {
 		restTemplate.getForEntity(UtilityDataObject.MAIN_URL+UtilityDataObject.LOGIN_VALIDATE+"?username=ADITYA", String.class);
 		logger.info("ROOT CALLED {}", projectdomain+loginvalidate);
 		return "login";
+	}*/
+	
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home(Locale locale, Model model, HttpServletRequest req) {
+		return "login.tiles";
 	}
 	
 	
